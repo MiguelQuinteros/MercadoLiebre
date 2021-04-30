@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+    body{
+        font-family: roboto;
+        font-size: 12px;
+        background-color:#ebebeb;
+    }
+        header{
+            background-color: #EAC926;
+        }
+            header div.cajaCabecera{
+                display: flex;
+                margin: 20px;
+                flex-wrap: wrap;
+            }
+                header div a{
+                    max-width: 50%;
+                }
+                    header div a img{
+                        width: 100%;
+                    }
+                header div form.searchBar{
+                    overflow: hidden;
+                    max-width: 50%;
+                    padding: 10px 10px;
+                    margin: auto;                   
+                }
+                header div button{
+                    text-overflow: unset;
+                    max-width: 100%;
+                    max-height: 33px;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    background-color: white;
+                    padding: 10px 5px;
+                    border: none;
+                    color: #666;
+                }
+                header div h3{
+                    display: inline;
+                    margin: auto;
+                    text-align: center;
+                    font-weight: normal;
+                    max-width: 80%;
+                }
+            header nav{
+                color: black;
+                display: none;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 10px;
+            }
+                header nav a:link{
+                    text-decoration: none;
+                    color: black;
+                }
+                header nav ul.navBar{
+                    list-style: none;
+                    text-decoration: none;
+                }
+                header nav ul.loginBar{
+                    list-style: none;
+                    display: flex;
+                }
+            header div.burguer-menu{
+                /* background-color:#03264C; cambie el que dice la consigna por el que encuentro en la pagina de ML*/
+                background-color:#3483fa;
+                color: white;
+                display: block;
+                width: 30px;
+                padding: 6px ;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 18px;
+                margin: auto;
+                margin-bottom: 10px;
+                border: 8px;
+                
+            }
+            header div.bannerHome{
+                width: 100%;
+                position: relative;
+                top: 3px;
+            }
+            header img.banner{
+                max-width: 100%;
+
+            }
+        main{
+            max-width: 90%;
+            margin: auto;
+        }
+            main h2{
+                font-size: 24px;
+                color: #666;
+            }
+            main section.ultimaVisita, main section.ofertas{
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: space-between;
+            }
+                main section article{
+                    margin: 10px 0px;
+                    background-color: white;
+                    transition: all 1s;
+                }
+                main section article:hover {
+                    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+                }
+                main section article img{
+                    max-width: 100%;
+                }
+                main section article div.cajaArticulo{
+                    border-top: solid 1px #ebebeb;
+                    padding: 15px;
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                main section article i.fa-truck {
+                    color: #39b54a;
+                    display: block;
+                    font-size: 16px;
+                    padding: 5px;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #39b54a;
+                    background-color: #FFF;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 20px;
+                    top: -15px;
+                    transition: all 1s;
+                }
+                main section article i.fa-truck:hover{
+                    transform: rotate(-90deg);
+                }
+                main section article .cajaImporte{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                main section article .precio{
+                    flex-grow: 0.3;
+                    font-size: 18px;
+                    margin: 0 5px;
+                }
+                main section article .descuento{
+                    flex-grow: 0.7;
+                    font-size: 16px;
+                    color: #39b54a;
+                    align-self: flex-end;
+                }
+                main section article .descripcion{
+                    display: none;
+                    font-size: 16px;
+                    color: #666;
+                    width: 100%;
+                    margin-top: 5px;
+                    margin-bottom: -5px;
+                    transition: display 5s;
+                }
+                main section article:hover .descripcion {
+                    display: block;
+                }
+                main form{
+                    width: 100%;
+                    padding: 20px 40px;
+                    margin: auto;
+                    max-width: 700px;
+                }
+                    main form div{
+                        width: 100%;
+                    }
+                    main form div label{
+                    width: 25%;
+                    }
+                    main form div label input.register{
+                            width: 100%;
+                            padding: 5px;
+                            margin: 10px auto;
+                    }
+                    main form div label input.login{
+                        width: 100%;
+                        padding: 5px;
+                        margin: 10px auto;
+                     }
+                    main form div button.enviar{
+                        width: 100%;
+                        padding: 5px;
+                        margin: 10px auto;
+                        background-color:#3483fa;
+                        color: white;
+                        border: none;
+                        transition: all 1s;
+                    }   
+                    main form div button.enviar:hover{
+                        background-color: #0022AA;
+
+                    }
+                    main form div label.register{
+                        font-weight: bold;
+                    }
+                    main form div label.register ul.perfilUsuario{
+                        width: 100%;
+                        list-style: none;
+                        font-weight: normal;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                    main form div label ul.perfilUsuario li input{
+                        margin: 10px 20px;
+                    }
+                    main form div label ul.categoriaInteres{
+                        list-style:none;
+                        font-weight: normal;
+                        margin:10px 0px;
+                    }
+                    main form div ul.categoriaInteres li{
+                        margin: 5px 0px;
+                    }
+                    main form div .botonFormulario{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+        footer{
+            background-color: white;
+            margin: auto;
+            padding: 30px 0px 10px 0px;
+        }
+            footer section{
+                text-align: center;
+                margin: 30px;
+            }
+                footer section i{
+                    font-size: 2em;
+                    margin-bottom: 10px;
+                    color: #3483fa;
+                }
+                footer section h4{
+                    color: #666;
+                }
+                footer section p{
+                    margin: 0px 30px;
+                    color: #666;
+                }
+                footer section h6{
+                    color:  #666;
+                    text-align: left;
+                    font-weight: normal;
+                }
+/* NAVEGACION EN TABLET pedia 361, es muy chico */ 
+@media (min-width: 480px){ 
+                header nav{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                header ul.navBar{
+                    display: flex;
+                    align-self: center;
+                    flex-grow: 0.4;
+                    justify-content: space-between;
+                }
+                header ul.loginBar{
+                    display: flex;
+                    align-self: center;
+                    text-decoration: none;
+                    flex-grow: 0.25;
+                    justify-content: space-between;
+                }
+                header div.burguer-menu{
+                    display: none;
+                }
+                main section article{
+                    width: 45%;
+                    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+                }
+                    main section article i.fa-truck{
+                        font-size: 14px;
+                    }
+                    main section article .precio{
+                        font-size: 16px;
+                    }
+                    main section article .descuento{
+                        font-size: 14px;
+                    }
+                    main section article .descripcion{
+                        display: block;
+                        font-size: 14px;
+                    }
+}
+/* NAVEGACION EN DESKTOP */
+@media (min-width: 769px){
+                main section article{
+                    width: 22.5%;  
+                }
+            footer{
+                display: flex;
+                flex-wrap: wrap;
+            }
+                footer section{
+                    width: 25%;
+                    transition: all 1s;
+                }
+                footer section:hover{
+                    transform: scale(1.2);
+                }
+                footer section:hover i{
+                    color: #666;
+                }
+}
