@@ -1,4 +1,5 @@
 const express = require('express');
+const process = require('process')
 const app = express();
 const path = require('path');
 
@@ -14,6 +15,6 @@ app.get('/login', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
 
-app.listen(3000, () => {
-    console.log('Estoy corriendo en el puerto 3000');
-});
+app.listen(process.env.PORT || 3000, function () {
+    console.log('servidor corriendo en el puerto 3000');
+})
